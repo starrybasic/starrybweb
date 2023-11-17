@@ -1,11 +1,21 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>재택근무</title>
-  <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volumetric Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>재택근무 관련 네트워크 사용</a></h1>
-  <p>재택근무 시행 기간 동안 토렌트, 웹하드로 고용량 파일 다운로드를 자제해주시기 바랍니다.<br>3명 이상의 원격 접속과 고용량 파일 다운로드가 겹칠 경우 업무에 지장이 생길 것으로 보입니다.</P>
+    <h2>Volumetric Weight Calculator</h2>
+    <div id="parcel-form">
+        <div id="parcels">
+            <!-- Parcel inputs will be added here -->
+        </div>
+        <button type="button" class="add-box" onclick="addBox()">Add Box</button>
+        <button type="button" onclick="calculateWeight()">Calculate Weight</button>
+        <div id="totalWeight">Total Volumetric Weight: 0 kg</div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
